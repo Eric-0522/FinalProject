@@ -65,4 +65,19 @@ void log_message(LogLevel level, const char *format, ...);
 int read_n_bytes(int sockfd, void *buffer, int n);
 int write_n_bytes(int sockfd, void *buffer, int n);
 
+
+// ==========================================
+// 6. 網路交互原型宣告 (Prototypes)
+// ==========================================
+// 這些函數實作在 src_lib/network.c 中
+
+// 建立 Server Socket (socket -> bind -> listen)
+// 回傳: sockfd 或 -1 (失敗)
+int create_server_socket(int port);
+
+// 建立 Client Socket 並連線 (socket -> connect)
+// 回傳: sockfd 或 -1 (失敗)
+int connect_to_server(const char *ip, int port);
+
+
 #endif // COMMON_H
