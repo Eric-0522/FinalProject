@@ -15,7 +15,7 @@
 > **負責實作：劉章佑**
 - 實作 checksum 功能確認內容沒有被修改，以及 XOR 封包加解密。
 - 使用 session_id 驗證 client 端已登入過，才可以進行購票的動作。
-- 實作 Timeout 機制
+- 實作 Timeout 機制。
 ## Logger
 > **負責實作：沈柏安**
 - 使用 `PTHREAD_MUTEX_INITIALIZER` 初始化一個鎖，其目的是防止同一個 Process 內的不同 Thread 同時寫入
@@ -26,4 +26,5 @@
 ![image](https://hackmd.io/_uploads/S1DSJKtQZe.png)
 - Server.log 的執行結果
 ![image](https://hackmd.io/_uploads/BJsskFKQZx.png)
+
 
