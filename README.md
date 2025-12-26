@@ -19,6 +19,8 @@
 - 使用 `F_WRLCK` (Exclusive Write Lock / 獨佔寫入鎖)。這是 kernel level 的鎖。當一個 Process 鎖住檔案時，OS 會強制其他 Process 等待 (Blocking)，直到鎖被釋放
 
 # 執行結果
+- 系統架構圖
+![image](assets/System_Architecture.png)
 - Client.log 的執行結果
 ![image](https://hackmd.io/_uploads/S1DSJKtQZe.png)
 - Server.log 的執行結果
